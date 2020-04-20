@@ -1786,4 +1786,20 @@
 		"prefix": "st ",
 		"body": ["\\mathrm{s.t.}\\"]
 	},
+	"LaTeX - <=": {
+		"prefix": "<=",
+		"body": ["\\leqq"],
+	},
+	"LaTeX - leqq": {
+		"prefix": "leqq",
+		"body": ["\\leqq"],
+	},
+	"LaTeX - >=": {
+		"prefix": ">=",
+		"body": ["\\geqq"],
+	},
+	"LaTeX - geqq": {
+		"prefix": "geqq",
+		"body": ["\\geqq"],
+	},
 }
