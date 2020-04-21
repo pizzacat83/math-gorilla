@@ -1802,4 +1802,24 @@
 		"prefix": "geqq",
 		"body": ["\\geqq"],
 	},
+	"LaTeX - = def": {
+		"prefix": "defeq",
+		"body": ["\\stackrel{\\mathrm{def}}{=}"],
+	},
+	"LaTeX - Im z": {
+		"prefix": "imaginary",
+		"body": ["\\operatorname{Im}"],
+	},
+	"LaTeX - Re z": {
+		"prefix": "real",
+		"body": ["\\operatorname{Re}"],
+	},
+	"LaTeX - Im f": {
+		"prefix": "image",
+		"body": ["\\operatorname{Im}"],
+	},
+	"LaTeX - Ker f": {
+		"prefix": "ker",
+		"body": ["\\operatorname{Ker}"],
+	},
 }
