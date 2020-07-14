@@ -4,7 +4,7 @@
 	  "scope": "",
 	  "prefix": "\\id",
 	  "body": [
-		"$\\displaystyle $1$ $0"
+		"$\\displaystyle $1$$0"
 	  ],
 	  "description": "Create inline math formula with display style"
 	},
@@ -173,7 +173,7 @@
 	  "scope": "",
 	  "prefix": "\\deriv",
 	  "body": [
-		"\\frac{d${1:f}}{d${2:x}} $0"
+		"\\frac{d${1:f}}{d${2:x}}$0"
 	  ]
 	},
 	"LaTeX - frac": {
@@ -964,7 +964,7 @@
 	  "scope": "",
 	  "prefix": "\\log",
 	  "body": [
-		"\\log_{$1} $0"
+		"\\log_{$1}$0"
 	  ]
 	},
 	"LaTeX - ln": {
@@ -1023,13 +1023,13 @@
 		"\\dim"
 	  ]
 	},
-	"LaTeX - ker": {
-	  "scope": "",
-	  "prefix": "\\ker",
-	  "body": [
-		"\\ker"
-	  ]
-	},
+	// "LaTeX - ker": {
+	//   "scope": "",
+	//   "prefix": "\\ker",
+	//   "body": [
+	// 	"\\ker"
+	//   ]
+	// },
 	"LaTeX - deg": {
 	  "scope": "",
 	  "prefix": "\\deg",
@@ -1650,7 +1650,7 @@
 	  "scope": "",
 	  "prefix": "\\mid",
 	  "body": [
-		"\\mid"
+		"\\mathrel{}\\mid\\mathrel{}"
 	  ]
 	},
 	"LaTeX - nmid": {
@@ -2295,8 +2295,16 @@
 		"prefix": "\\imaginary",
 		"body": ["\\operatorname{Im}"],
 	},
+	"LaTeX - Im 2": {
+		"prefix": "\\im",
+		"body": ["\\operatorname{Im}"],
+	},
 	"LaTeX - Re z": {
 		"prefix": "\\real",
+		"body": ["\\operatorname{Re}"],
+	},
+	"LaTeX - Re z 2": {
+		"prefix": "\\re",
 		"body": ["\\operatorname{Re}"],
 	},
 	"LaTeX - Im f": {
@@ -2307,4 +2315,13 @@
 		"prefix": "\\ker",
 		"body": ["\\operatorname{Ker}"],
 	},
-  }
+	"LaTeX - :=": {
+		"prefix": "\\coloneqq",
+		"body": ["\\coloneqq"],
+	},
+	"LaTeX - <=def=> ": {
+		"scope": "",
+		"prefix": "\\defarrow",
+		"body": ["\\xLeftrightarrow{\\mathrm{def}}"]
+	},
+}

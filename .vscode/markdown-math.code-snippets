@@ -2,7 +2,7 @@
 	"LaTeX - inline math (dollars)": {
 		"scope": "",	
 		"prefix": "ii",	
-		"body": ["$$1$ $0"],
+		"body": ["$$1$$0"],
 		"description": "Create inline math formula"
 	},
 
@@ -16,14 +16,14 @@
 	"LaTeX - inline math with display style (dollars)": {
 		"scope": "",	
 		"prefix": "id",	
-		"body": ["$\\displaystyle $1$ $0"],
+		"body": ["$\\displaystyle $1$$0"],
 		"description": "Create inline math formula with display style"
 	},
 
 	"LaTeX - inline math (brackets)": {
 		"scope": "", 
 		"prefix": "II", 
-		"body": ["\\($1\\) $0"],
+		"body": ["\\($1\\)$0"],
 		"description": "Create inline math formula"
 	},
 	"LaTeX - display math (brackets)": {
@@ -99,42 +99,42 @@
 	"LaTeX - abs": {
 		"scope": "",
 		"prefix": "abs",
-		"body": ["\\left| $1 \\right| $0"]
+		"body": ["\\left| $1 \\right|$0"]
 	},
 	"LaTeX - norm": {
 		"scope": "",
 		"prefix": "norm",
-		"body": ["\\left\\| $1 \\right\\| $0"]
+		"body": ["\\left\\| $1 \\right\\|$0"]
 	},
 	"LaTeX - lparenthesis + rparenthesis": {
 		"scope": "",
 		"prefix": "lrparentheses",
-		"body": ["\\left( $1 \\right) $0"]
+		"body": ["\\left( $1 \\right)$0"]
 	},
 	"LaTeX - lbracket + rbracket": {
 		"scope": "",
 		"prefix": "lrbrackets",
-		"body": ["\\left[ $1 \\right] $0"]
+		"body": ["\\left[ $1 \\right]$0"]
 	},
 	"LaTeX - lcurlybracket + rcurlybracket": {
 		"scope": "",
 		"prefix": "lrcurlybrackets",
-		"body": ["\\left\\{ $1 \\right\\\\} $0"]
+		"body": ["\\left\\{ $1 \\right\\\\}$0"]
 	},
 	"LaTeX - langle + rangle": {
 		"scope": "",
 		"prefix": "lrangle",
-		"body": ["\\left\\langle $1 \\right\\rangle $0"]
+		"body": ["\\left\\langle $1 \\right\\rangle$0"]
 	},
 	"LaTeX - lfloor + rfloor": {
 		"scope": "",
 		"prefix": "lrfloor",
-		"body": ["\\left\\lfloor $1 \\right\\rfloor $0"]
+		"body": ["\\left\\lfloor $1 \\right\\rfloor$0"]
 	},
 	"LaTeX - lceil + rceil": {
 		"scope": "",
 		"prefix": "lrceil",
-		"body": ["\\left\\lceil $1 \\right\\rceil $0"]
+		"body": ["\\left\\lceil $1 \\right\\rceil$0"]
 	},
 	
 
@@ -196,22 +196,22 @@
 	"LaTeX - derivative (alias)": {
 		"scope": "",
 		"prefix": "deriv",
-		"body": ["\\frac{d${1:f}}{d${2:x}} $0"]
+		"body": ["\\frac{d${1:f}}{d${2:x}}$0"]
 	},
 	"LaTeX - partial derivative (alias)": {
 		"scope": "",
 		"prefix": "pderiv",
-		"body": ["\\frac{\\partial ${1:f}}{\\partial ${2:x}} $0"]
+		"body": ["\\frac{\\partial ${1:f}}{\\partial ${2:x}}$0"]
 	},
 	"LaTeX - cases (alias)": {
 		"scope": "",
 		"prefix": "cases",
-		"body": ["\\begin{cases}","\t$1 &\\text{$2}\\\\\\\\","\t$3 &\\text{$4}\\\\\\\\$5","\\end{cases} $0"]
+		"body": ["\\begin{cases}","\t$1 &\\text{$2}\\\\\\\\","\t$3 &\\text{$4}\\\\\\\\$5","\\end{cases}$0"]
 	},
 	"LaTeX - align (alias)": {
 		"scope": "",
 		"prefix": "align",
-		"body": ["\\begin{${1|align,align*,aligned|}}","\t$2\\\\\\\\","\t$3\\\\\\\\$4","\\end{$1} $0"]
+		"body": ["\\begin{${1|align,align*,aligned|}}","\t$2\\\\\\\\","\t$3\\\\\\\\$4","\\end{$1}$0"]
 	},
 
 
@@ -807,7 +807,7 @@
 	"LaTeX - log": {
 		"scope": "",
 		"prefix": "log",
-		"body": ["\\log_{$1} $0"]
+		"body": ["\\log_{$1}$0"]
 	},
 	"LaTeX - ln": {
 		"scope": "",
@@ -849,11 +849,11 @@
 		"prefix": "dim",
 		"body": ["\\dim"]
 	},
-	"LaTeX - ker": {
-		"scope": "",
-		"prefix": "ker",
-		"body": ["\\ker"]
-	},
+	// "LaTeX - ker": {
+	// 	"scope": "",
+	// 	"prefix": "ker",
+	// 	"body": ["\\ker"]
+	// },
 	"LaTeX - deg": {
 		"scope": "",
 		"prefix": "deg",
@@ -972,7 +972,7 @@
 	"LaTeX - lim": {
 		"scope": "",
 		"prefix": "lim",
-		"body": ["\\lim_{${1:x} \\to ${2:\\infty}} $0"]
+		"body": ["\\lim_{${1:x} \\to ${2:\\infty}}$0"]
 	},
 
 
@@ -1310,7 +1310,7 @@
 	"LaTeX - mid": {
 		"scope": "",
 		"prefix": "mid",
-		"body": ["\\mid"]
+		"body": ["\\mathrel{}\\mid\\mathrel{}"]
 	},
 	"LaTeX - nmid": {
 		"scope": "",
@@ -1810,8 +1810,16 @@
 		"prefix": "imaginary",
 		"body": ["\\operatorname{Im}"],
 	},
+	"LaTeX - Im": {
+		"prefix": "im",
+		"body": ["\\operatorname{Im}"],
+	},
 	"LaTeX - Re z": {
 		"prefix": "real",
+		"body": ["\\operatorname{Re}"],
+	},
+	"LaTeX - Re z 2": {
+		"prefix": "re",
 		"body": ["\\operatorname{Re}"],
 	},
 	"LaTeX - Im f": {
@@ -1822,4 +1830,12 @@
 		"prefix": "ker",
 		"body": ["\\operatorname{Ker}"],
 	},
+	"LaTeX - :=": {
+		"prefix": "coloneqq",
+		"body": ["\\coloneqq"],
+	},
+	"LaTeX - color": {
+		"prefix": "color",
+		"body": ["{\\color{${1:dodgerblue}}$2}"],
+	}
 }
