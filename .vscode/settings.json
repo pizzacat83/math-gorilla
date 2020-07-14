@@ -2,6 +2,7 @@
     "[markdown]": {
         "editor.quickSuggestions": true
     },
-    "markdown.preview.breaks": true
+    "markdown.preview.breaks": true,
+    "editor.tabSize": 1
 
 }
