@@ -1758,20 +1758,6 @@
 		"\\wp"
 	  ]
 	},
-	"LaTeX - Re": {
-	  "scope": "",
-	  "prefix": "\\Re",
-	  "body": [
-		"\\Re"
-	  ]
-	},
-	"LaTeX - Im": {
-	  "scope": "",
-	  "prefix": "\\Im",
-	  "body": [
-		"\\Im"
-	  ]
-	},
 	"LaTeX - imath": {
 	  "scope": "",
 	  "prefix": "\\imath",
