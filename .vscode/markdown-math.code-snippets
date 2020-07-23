@@ -1827,5 +1827,9 @@
 	"LaTeX - color": {
 		"prefix": "color",
 		"body": ["{\\color{${1:dodgerblue}}$2}"],
+	},
+	"LaTeX - xto": {
+		"prefix": "xto",
+		"body": ["\\xrightarrow{$1}"],
 	}
 }

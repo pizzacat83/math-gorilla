@@ -2310,4 +2310,8 @@
 		"prefix": "\\defarrow",
 		"body": ["\\xLeftrightarrow{\\mathrm{def}}"]
 	},
+	"LaTeX - xto": {
+		"prefix": "\\xto",
+		"body": ["\\xrightarrow{$1}"],
+	}
 }
