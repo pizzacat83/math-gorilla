@@ -1,5 +1,6 @@
 import re
 import argparse
+import sys
 
 parser = argparse.ArgumentParser()
 parser.add_argument("file", help="path to the Markdown file")
@@ -9,6 +10,8 @@ s=None
 if args.file is None:
     s=r"""
 """
+elif args.file == '-':
+    s = sys.stdin.read()
 else:
     f = open(args.file)
     s = f.read()
