@@ -1650,9 +1650,16 @@
 	  "scope": "",
 	  "prefix": "\\mid",
 	  "body": [
-		"\\mathrel{}\\mid\\mathrel{}"
+		"\\mid"
 	  ]
 	},
+	"LaTeX - middlemid": {
+		"scope": "",
+		"prefix": "\\middlemid",
+		"body": [
+	"\\mathrel{}\\middle|\\mathrel{}"
+		]
+},
 	"LaTeX - nmid": {
 	  "scope": "",
 	  "prefix": "\\nmid",
@@ -2313,5 +2320,49 @@
 	"LaTeX - xto": {
 		"prefix": "\\xto",
 		"body": ["\\xrightarrow{$1}"],
-	}
+	},
+	"LaTeX - internal": {
+		"prefix": "\\internal",
+		"body": ["{$1}^\\circ"],
+	},
+	"LaTeX - closure": {
+		"prefix": "\\closure",
+		"body": ["\\overline{$1}"],
+	},
+	"LaTeX - lArr": {
+		"prefix": "\\lArr",
+		"body": ["\\lArr"],
+	},
+	"LaTeX - rArr": {
+		"prefix": "\\rArr",
+		"body": ["\\rArr"],
+	},
+	"LaTeX - lrArr": {
+		"prefix": "\\lrArr",
+		"body": ["\\lrArr"],
+	},
+	"LaTeX - rlArr": {
+		"prefix": "\\rlArr",
+		"body": ["\\lrArr"],
+	},
+	"LaTeX - smashproduct": {
+		"prefix": "\\smashproduct",
+		"body": ["$⨳$"],
+	},
+	"LaTeX - expected": {
+		"prefix": "\\expected",
+		"body": ["\\operatorname{Ex}\\left[$1\\right]$2"],
+	},
+	"LaTeX - variance": {
+		"prefix": "\\variance",
+		"body": ["\\operatorname{Var}\\left[$1\\right]$2"],
+	},
+	"LaTeX - distconv": {
+		"prefix": "\\distconv",
+		"body": ["\\xrightarrow{\\mathrm{d}}"],
+	},
+	"LaTeX - probconv": {
+		"prefix": "\\probconv",
+		"body": ["\\xrightarrow{\\mathrm{p}}"],
+	},
 }
