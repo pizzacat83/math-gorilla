@@ -1911,5 +1911,12 @@
 		"prefix": ["comp", "\\comp"],
 		"body": ["\\operatorname{comp}"],
 	},
-
+	"LaTeX - natural0": {
+		"prefix": ["natural0", "\\natural0"],
+		"body": ["\\mathbb{Z}_{\\ge 0}"],
+	},
+	"LaTeX - natural1": {
+		"prefix": ["natural1", "\\natural1"],
+		"body": ["\\mathbb{Z}_{> 0}"],
+	},
 }
