@@ -1887,4 +1887,20 @@
 		"prefix": "probconv",
 		"body": ["\\xrightarrow{\\mathrm{p}}"],
 	},
+	"LaTeX - true": {
+		"prefix": ["true", "\\true"],
+		"body": ["\\mathtt{tt}"],
+	},
+	"LaTeX - false": {
+		"prefix": ["false", "\\false"],
+		"body": ["\\mathtt{ff}"],
+	},
+	"LaTeX - truefalse": {
+		"prefix": ["truefalse", "\\truefalse"],
+		"body": ["\\{ \\mathtt{tt},\\mathtt{ff} \\}"],
+	},
+	"LaTeX - denotation": {
+		"prefix": ["denotation", "\\denotation"],
+		"body": ["\\llbracket { \\textstyle $1 }\\rrbracket_{\\mathbb S,J}"],
+	},
 }
