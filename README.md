@@ -5,7 +5,7 @@ Tools to write math gori-gorilly🦍 in Scrapbox.
 
 
 ## Note ⚠
-`md2sb.py` may be not the Markdown -> Scrapbox tool you expect. It just converts `$...$` to `[$ ... ]`. Nothing else. Because that's enough for me.
+`md2sb.py` is probably not the Markdown -> Scrapbox tool you expect. It just converts `$...$` to `[$ ... ]`. Nothing else. Because that's enough for me.
 
 ## License
 [MIT License](./LICENSE)
