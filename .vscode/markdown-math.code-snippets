@@ -98,43 +98,43 @@
 
 	"LaTeX - abs": {
 		"scope": "",
-		"prefix": "abs",
-		"body": ["\\left| $1 \\right|$0"]
+		"prefix": ["abs", "\\abs"],
+		"body": ["\\left| ${1:$TM_SELECTED_TEXT} \\right|$0"]
 	},
 	"LaTeX - norm": {
 		"scope": "",
-		"prefix": "norm",
-		"body": ["\\left\\| $1 \\right\\|$0"]
+		"prefix": ["norm", "\\norm"],
+		"body": ["\\left\\| ${1:$TM_SELECTED_TEXT} \\right\\|$0"]
 	},
 	"LaTeX - lparenthesis + rparenthesis": {
 		"scope": "",
-		"prefix": "lrparentheses",
-		"body": ["\\left( $1 \\right)$0"]
+		"prefix": ["lrparentheses", "\\lrparentheses"],
+		"body": ["\\left( ${1:$TM_SELECTED_TEXT} \\right)$0"]
 	},
 	"LaTeX - lbracket + rbracket": {
 		"scope": "",
-		"prefix": "lrbrackets",
-		"body": ["\\left[ $1 \\right]$0"]
+		"prefix": ["lrbrackets", "\\lrbrackets"],
+		"body": ["\\left[ ${1:$TM_SELECTED_TEXT} \\right]$0"]
 	},
 	"LaTeX - lcurlybracket + rcurlybracket": {
 		"scope": "",
-		"prefix": "lrcurlybrackets",
-		"body": ["\\left\\{ $1 \\right\\\\}$0"]
+		"prefix": ["lrcurlybrackets", "\\lrcurlybrackets"],
+		"body": ["\\left\\{ ${1:$TM_SELECTED_TEXT} \\right\\\\}$0"]
 	},
 	"LaTeX - langle + rangle": {
 		"scope": "",
-		"prefix": "lrangle",
-		"body": ["\\left\\langle $1 \\right\\rangle$0"]
+		"prefix": ["lrangle", "\\lrangle"],
+		"body": ["\\left\\langle ${1:$TM_SELECTED_TEXT} \\right\\rangle$0"]
 	},
 	"LaTeX - lfloor + rfloor": {
 		"scope": "",
-		"prefix": "lrfloor",
-		"body": ["\\left\\lfloor $1 \\right\\rfloor$0"]
+		"prefix": ["lrfloor", "\\lrfloor"],
+		"body": ["\\left\\lfloor ${1:$TM_SELECTED_TEXT} \\right\\rfloor$0"]
 	},
 	"LaTeX - lceil + rceil": {
 		"scope": "",
 		"prefix": "lrceil",
-		"body": ["\\left\\lceil $1 \\right\\rceil$0"]
+		"body": ["\\left\\lceil ${1:$TM_SELECTED_TEXT} \\right\\rceil$0"]
 	},
 	
 
