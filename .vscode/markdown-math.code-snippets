@@ -1903,4 +1903,13 @@
 		"prefix": ["denotation", "\\denotation"],
 		"body": ["\\llbracket { \\textstyle $1 }\\rrbracket_{\\mathbb S,J}"],
 	},
+	"LaTeX - diag": {
+		"prefix": ["diag", "\\diag"],
+		"body": ["\\operatorname{diag}"],
+	},
+	"LaTeX - comp": {
+		"prefix": ["comp", "\\comp"],
+		"body": ["\\operatorname{comp}"],
+	},
+
 }
