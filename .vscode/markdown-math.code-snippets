@@ -1919,4 +1919,29 @@
 		"prefix": ["natural1", "\\natural1"],
 		"body": ["\\mathbb{Z}_{> 0}"],
 	},
+	"LaTeX - rRs": {
+		"prefix": ["Res", "\\Res"],
+		"body": ["\\underset{z=${1}}{\\operatorname{Res}}\\left[ ${2:$TM_SELECTED_TEXT} \\right]$0"],
+	},
+	"LaTeX - rank": {
+		"prefix": ["rank", "\\rank"],
+		"body": ["\\operatorname{rank}"],
+	},
+	"LaTeX - bm": {
+		"prefix": ["bm", "\\bm"],
+		"body": ["\\bm{${1:$TM_SELECTED_TEXT}}"],
+	},
+	"LaTeX - bold": {
+		"prefix": ["bold", "\\bold"],
+		"body": ["\\bold{${1:$TM_SELECTED_TEXT}}"],
+	},
+	"LaTeX - objects (category)": {
+		"prefix": ["objects", "\\objects"],
+		"body": ["\\operatorname{Ob}(${1:$TM_SELECTED_TEXT})"],
+	},
+	"LaTeX - morphisms (category)": {
+		"prefix": ["morphisms", "\\morphisms"],
+		"body": ["\\operatorname{Mor}(${1:$TM_SELECTED_TEXT})"],
+	},
+
 }
