@@ -1,8 +1,8 @@
 {
     "[markdown]": {
-        "editor.quickSuggestions": true
+        "editor.quickSuggestions": true,
+        "editor.tabSize": 1
     },
     "markdown.preview.breaks": true,
-    "editor.tabSize": 1
 
 }
