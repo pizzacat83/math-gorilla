@@ -1,0 +1,8 @@
+# yaml-language-server: $schema=./schema.yml
+
+- name:
+    - dom
+    - domain
+  body: \operatorname{dom}
+
+
