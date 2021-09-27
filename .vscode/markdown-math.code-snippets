@@ -1833,7 +1833,7 @@
 	},
 	"LaTeX - color": {
 		"prefix": "color",
-		"body": ["{\\color{${1:dodgerblue}}$2}"],
+		"body": ["{\\color{${1:dodgerblue}}${2:$TM_SELECTED_TEXT}}"],
 	},
 	"LaTeX - xto": {
 		"prefix": "xto",
@@ -1901,7 +1901,7 @@
 	},
 	"LaTeX - denotation": {
 		"prefix": ["denotation", "\\denotation"],
-		"body": ["\\llbracket { \\textstyle $1 }\\rrbracket_{\\mathbb S,J}"],
+		"body": ["\\llbracket { ${1:$TM_SELECTED_TEXT} }\\rrbracket_{${2:\\mathbb S},${3:J}}"],
 	},
 	"LaTeX - diag": {
 		"prefix": ["diag", "\\diag"],
