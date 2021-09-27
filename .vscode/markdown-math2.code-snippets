@@ -166,7 +166,7 @@
 	  "scope": "",
 	  "prefix": "\\implies",
 	  "body": [
-		"\\Rightarrow"
+		"\\implies"
 	  ]
 	},
 	"LaTeX - derivative (alias)": {

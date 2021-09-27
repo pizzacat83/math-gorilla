@@ -191,7 +191,7 @@
 	"LaTeX - Rightarrow (alias)": {
 		"scope": "",
 		"prefix": "implies",
-		"body": ["\\Rightarrow"]
+		"body": ["\\implies"]
 	},
 	"LaTeX - derivative (alias)": {
 		"scope": "",
