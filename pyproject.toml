@@ -9,6 +9,9 @@ python = "^3.9"
 PyYAML = "^5.4.1"
 
 [tool.poetry.dev-dependencies]
+mypy = "^0.910"
+rope = "^0.20.1"
+types-PyYAML = "^5.4.10"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
