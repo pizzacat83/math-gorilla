@@ -1,8 +1,15 @@
 # yaml-language-server: $schema=./schema.yml
 
-- name:
-    - dom
-    - domain
-  body: \operatorname{dom}
+- category: null
+  snippets:
+    - name:
+        - dom
+        - domain
+      body: \operatorname{dom}
 
-
+- category: category
+  snippets:
+    - name:
+      - cod
+      - codomain
+      body: \operatorname{dom}

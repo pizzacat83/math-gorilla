@@ -1,10 +1,14 @@
-from typing import Any, Dict, List, Tuple
+from typing import Any, Dict, List, Optional, Tuple
+import functools
 import yaml
 import json
 import os
 
-def transform(snippet: Dict[str, Any]) -> Tuple[str, Dict[str, Any]]:
-    snippet_id = snippet['name'][0]
+InputSnippet = Dict[str, Any]
+OutputSnippet = Tuple[str, Dict[str, Any]]
+
+def transform_snippet(category: Optional[str], snippet: InputSnippet) -> OutputSnippet:
+    snippet_id = f"{snippet['name'][0]}{'' if category is None else f' ({category})'}"
     return (
         snippet_id,
         {
@@ -14,14 +18,19 @@ def transform(snippet: Dict[str, Any]) -> Tuple[str, Dict[str, Any]]:
         }
     )
 
+def transform_category(category: Dict[str, Any]) -> List[OutputSnippet]:
+    category_id: Optional[str] = category['category']
+    snippets: List[InputSnippet] = category['snippets']
+    return list(map(functools.partial(transform_snippet, category_id), snippets))
+
 def main():
     with open(os.path.join(
         os.path.dirname(__file__),
         'snippets.yml',
     )) as f:
-        data: List[Dict[str, Any]] = yaml.safe_load(f)
+        categories: List[Dict[str, Any]] = yaml.safe_load(f)
 
-    snippets = list(map(transform, data))
+    snippets = sum(list(map(transform_category, categories)), [])
     result = dict(snippets)
 
     if len(snippets) > len(result):
