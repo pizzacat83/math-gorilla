@@ -3,6 +3,7 @@ import functools
 import yaml
 import json
 import os
+from collections import Counter
 
 InputSnippet = Dict[str, Any]
 OutputSnippet = Tuple[str, Dict[str, Any]]
@@ -23,6 +24,12 @@ def transform_category(category: Dict[str, Any]) -> List[OutputSnippet]:
     snippets: List[InputSnippet] = category['snippets']
     return list(map(functools.partial(transform_snippet, category_id), snippets))
 
+def check_duplicate_id(snippets: List[OutputSnippet]) -> None:
+    counter = Counter(map(lambda x: x[0], snippets))
+    duplicate_ids = list(filter(lambda snippet_id: counter[snippet_id] > 1, counter.keys()))
+    if len(duplicate_ids) > 0:
+        raise ValueError(f"Duplicate snippet ids: {', '.join(duplicate_ids)}")
+
 def main():
     with open(os.path.join(
         os.path.dirname(__file__),
@@ -31,10 +38,10 @@ def main():
         categories: List[Dict[str, Any]] = yaml.safe_load(f)
 
     snippets = sum(list(map(transform_category, categories)), [])
+    check_duplicate_id(snippets)
+
     result = dict(snippets)
 
-    if len(snippets) > len(result):
-        raise ValueError('Duplicate snippet names')
 
     with open(os.path.join(
         os.path.dirname(__file__),
