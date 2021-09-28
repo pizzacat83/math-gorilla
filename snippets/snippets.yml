@@ -1,4 +1,4 @@
-# yaml-language-server: $schema=./schema.yml
+# yaml-language-server: $schema=./schema_.yml
 
 - category: null
   snippets:
