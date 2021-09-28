@@ -4,5 +4,7 @@
         "editor.tabSize": 1
     },
     "markdown.preview.breaks": true,
-
+    "github.copilot.enable": {
+        "*": true,
+    },
 }
